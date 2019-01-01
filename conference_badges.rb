@@ -14,6 +14,6 @@ def assign_rooms(speakers)
 end
 
 def printer(name)
-   name.collect {|name| puts "Hello, my name is #{name}."}
+   name.each {|name| puts "Hello, my name is #{name}."}
    name.map.with_index(1) {|name, num| puts "Hello, #{name}! You'll be assigned to room #{num}!"}
 end
